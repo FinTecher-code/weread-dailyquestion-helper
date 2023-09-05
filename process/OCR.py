@@ -19,6 +19,8 @@ class OCR:
     def run(self, quesImg, answImg):
         ques = self._ocr(quesImg)
         answ = self._ocr(answImg)
+        print('ques:',ques)
+        print('answ:',answ)
 
         ques = ''.join([item['words'] for item in ques['words_result']])
         answ = [item['words'] for item in answ['words_result']]

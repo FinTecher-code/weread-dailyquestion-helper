@@ -44,8 +44,8 @@ if __name__ == "__main__":
     while True:
         tmpQuesImg, tmpAnswImg, appImg = sc.run()
 
-        # print(tmpQuesImg)
-        # print(tmpAnswImg)
+        print(tmpQuesImg)
+        print(tmpAnswImg)
 
         if not isSame(quesImg, tmpQuesImg):
             quesImg, answImg, appImg = tmpQuesImg, tmpAnswImg, appImg
