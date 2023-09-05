@@ -13,7 +13,7 @@ class ScreenCapture:
     def __init__(self):
         if(mode == 'JIE_TU'):
             # 截图顶点调试
-            self.bound = (0, 90, 414, 736 + 80)
+            self.bound = (0, 80, 414, 736 + 80)
         else:
             # 笔记本小程序顶点截图
             self.bound = (0, 40, 414, 736 + 40)
@@ -65,4 +65,11 @@ class ScreenCapture:
     def run(self):
         img = self._getCapture()
         return self._splitCapture(img)
-        
+
+# sc = ScreenCapture()
+# img = sc._getCapture()
+# img.save('../output/images/all.png')
+
+# quesImg,ansImg,Img = sc._splitCapture(img)
+# quesImg.save('../output/images/quesImg.png')
+# ansImg.save('../output/images/ansImg.png')
