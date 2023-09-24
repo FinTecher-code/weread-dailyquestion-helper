@@ -17,6 +17,7 @@ END_WORDS_DICT = {
   "VICTORY": True
 }
 
+#比较图片是否一致
 def isSame(imgA, imgB):
     if imgA is None or imgB is None:
         return False
